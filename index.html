@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMS College</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>                                                                                                                                                                                                                                                                                                                                                                                                                          
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="AIMS College Logo"></a>
+            <div class="nav-link" id="nav-link">
+                <i class="fa fa-bars" aria-hidden="true"></i><!-- Fixed typo in hideMenu -->
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                   
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- Menu icon for mobile -->
+        </nav>
+        <div class="text-box">
+            <h1>Nepal's One of Finest College</h1>
+            <p>Empowering Minds, Shaping Futures...</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>    
+        </div>
+    </section>
+    <!---course-->
+<section class="course">
+<h1>Courses we offer</h1>
+<p>We offer wide range of cources from various faculty</p>
+<div class="row">
+    <div class="course-col">
+    <h3>Intermediate</h3>
+    <p>It includes intermediate studies like Science, Management, Arts, Sociology....</p>
+    </div>
+    <div class="course-col">
+        <h3>Graduation</h3>
+        <p>We have Bsc,csit, BBS, BHM, BIT,</p>
+    </div>
+    <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>We have Msc,csit, MBS, MIT,</p>
+    </div>
+</div>
+</section>
+<!--campus-->
+<section class="campus">
+<h1>Our regional compuses</h1>
+<p>Our regional campuses are in the major cities of nepal like Kathmandu, Pokhara, Chitwan,Butwal, Janakpur... </p>
+
+<div class="row">
+    <div class="campus-col">
+        <img src="images/kathmadu.jpg">
+        <div id="layer">
+            <h3>KATHMANDU</h3>
+        </div>
+        <div id="campus-col">
+            <img src="images/pokhara.jpg">
+            <div class="layer">
+                <h3>POKHARA</h3>
+            </div>
+            <div id="campus-col">
+                <img src="images/butwal.jpg.jpg">
+                <div class="layer">
+                    <h3>Butwal</h3>
+                </div>
+</div> 
+</section>
+<!--- ccc-->
+<section class="facilities">
+    <h1>Qur Facilities</h1>
+
+</section>
+
+
+    <!-- JS for toggle Menu -->
+    <script>
+        var navLink = document.getElementById("nav-link");
+
+        function showMenu() {
+            navLink.style.right = "0";  // Shows the menu
+        }
+
+        function hideMenu() {
+            navLink.style.right = "-200px"; // Hides the menu
+        }
+    </script>
+</body>
+</html>
